@@ -1,1 +1,0 @@
-# sait_VPR
