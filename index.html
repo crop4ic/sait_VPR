@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подготовка к ВПР по информатике</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Подготовка к ВПР по информатике</h1>
+            <div class="class-selector">
+                <button class="class-btn active" data-class="9">9 класс</button>
+                <button class="class-btn" data-class="11">11 класс</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="variant-selector">
+                <h2>Выберите вариант</h2>
+                <div class="variants">
+                    <button class="variant-btn" data-variant="1">Вариант 1</button>
+                    <button class="variant-btn" data-variant="2">Вариант 2</button>
+                    <button class="variant-btn" data-variant="3">Вариант 3</button>
+                    <button class="variant-btn" data-variant="4">Вариант 4</button>
+                </div>
+            </div>
+
+            <div class="test-container">
+                <div class="question-container">
+                    <!-- Вопросы будут добавляться динамически -->
+                </div>
+                <button class="submit-btn">Сдать работу</button>
+            </div>
+
+            <div class="results-container hidden">
+                <h2>Результаты</h2>
+                <div class="score"></div>
+                <div class="answers-review"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
