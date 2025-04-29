@@ -194,4 +194,54 @@ h1 {
     .submit-btn {
         width: 100%;
     }
+}
+
+.timer-container {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.start-test-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-test-btn:hover {
+    background-color: #2980b9;
+}
+
+.question-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-image-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.question-image-caption {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 5px;
 } 

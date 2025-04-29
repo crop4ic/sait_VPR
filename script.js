@@ -17,13 +17,89 @@ const testData = {
             question: "Между населёнными пунктами A, B, C, D, E построены дороги, протяжённость которых (в километрах) приведена в таблице. Определите длину кратчайшего пути между пунктами A и C.",
             options: ["4", "5", "6", "7"],
             correctAnswer: 1,
-            tip: "Нужно найти все возможные пути из A в C и выбрать кратчайший"
+            tip: "Нужно найти все возможные пути из A в C и выбрать кратчайший",
+            image: "images/road_map.png",
+            imageCaption: "Схема дорог между населёнными пунктами"
         },
         {
             question: "В базе данных хранится информация о студентах колледжа. Сколько записей в выборке будет найдено по запросу: (Группа = 'ИС-101') И (Средний_балл > 4.5)?",
             options: ["10", "15", "20", "25"],
             correctAnswer: 2,
-            tip: "Проанализируйте условия запроса и подсчитайте количество записей, удовлетворяющих обоим условиям"
+            tip: "Проанализируйте условия запроса и подсчитайте количество записей, удовлетворяющих обоим условиям",
+            image: "images/students_table.png",
+            imageCaption: "Таблица данных о студентах"
+        },
+        {
+            question: "Определите значение переменной после выполнения фрагмента программы на языке Python: x = 5; y = 3; while x > 0: y = y + 2; x = x - 1",
+            options: ["8", "11", "13", "15"],
+            correctAnswer: 2,
+            tip: "Проследите выполнение цикла пошагово и подсчитайте итоговое значение переменной"
+        },
+        {
+            question: "Сколько различных IP-адресов можно создать, используя маску подсети 255.255.255.248?",
+            options: ["6", "8", "14", "16"],
+            correctAnswer: 0,
+            tip: "Посчитайте количество доступных хостов в подсети с учетом маски",
+            image: "images/network_diagram.png",
+            imageCaption: "Схема сети с указанием маски подсети"
+        },
+        {
+            question: "В таблице базы данных содержится информация о компьютерных комплектующих. Сколько записей будет найдено по запросу: (Тип = 'Процессор') И (Цена < 15000)?",
+            options: ["5", "8", "12", "15"],
+            correctAnswer: 2,
+            tip: "Проанализируйте условия запроса и подсчитайте количество записей, удовлетворяющих обоим условиям",
+            image: "images/components_table.png",
+            imageCaption: "Таблица данных о компьютерных комплектующих"
+        },
+        {
+            question: "Определите значение переменной после выполнения фрагмента программы на языке Python: result = 0; for i in range(1, 6): result = result + i * 2",
+            options: ["20", "25", "30", "35"],
+            correctAnswer: 2,
+            tip: "Проследите выполнение цикла пошагово и подсчитайте итоговое значение переменной"
+        },
+        {
+            question: "Сколько различных маршрутов существует в сети между двумя серверами, если известно, что пакет может пройти максимум через 3 промежуточных узла?",
+            options: ["10", "12", "15", "18"],
+            correctAnswer: 2,
+            tip: "Подсчитайте все возможные комбинации маршрутов с учетом ограничения на количество промежуточных узлов",
+            image: "images/network_routes.png",
+            imageCaption: "Схема сети с возможными маршрутами"
+        },
+        {
+            question: "В базе данных хранится информация о сотрудниках компании. Сколько записей будет найдено по запросу: (Отдел = 'IT') И (Стаж > 3)?",
+            options: ["7", "10", "13", "16"],
+            correctAnswer: 1,
+            tip: "Проанализируйте условия запроса и подсчитайте количество записей, удовлетворяющих обоим условиям",
+            image: "images/employees_table.png",
+            imageCaption: "Таблица данных о сотрудниках"
+        },
+        {
+            question: "Определите значение переменной после выполнения фрагмента программы на языке Python: count = 0; text = 'программирование'; for char in text: if char in 'аеиоуыэюя': count += 1",
+            options: ["3", "4", "5", "6"],
+            correctAnswer: 2,
+            tip: "Проследите выполнение цикла пошагово и подсчитайте количество гласных букв"
+        },
+        {
+            question: "В базе данных хранится информация о товарах на складе. Сколько записей будет найдено по запросу: (Категория = 'Электроника') И (Количество > 10)?",
+            options: ["8", "12", "16", "20"],
+            correctAnswer: 1,
+            tip: "Проанализируйте условия запроса и подсчитайте количество записей, удовлетворяющих обоим условиям",
+            image: "images/warehouse_table.png",
+            imageCaption: "Таблица данных о товарах на складе"
+        },
+        {
+            question: "Сколько различных комбинаций паролей можно создать, используя 4 символа из набора: цифры 0-9 и буквы a-z?",
+            options: ["1679616", "1000000", "456976", "1048576"],
+            correctAnswer: 0,
+            tip: "Учтите, что каждый символ может быть цифрой или буквой, и порядок символов важен",
+            image: "images/password_combinations.png",
+            imageCaption: "Диаграмма возможных комбинаций паролей"
+        },
+        {
+            question: "Определите значение переменной после выполнения фрагмента программы на языке Python: x = 10; y = 5; while x > y: x = x - 2; y = y + 1",
+            options: ["x=4, y=8", "x=6, y=7", "x=8, y=6", "x=2, y=9"],
+            correctAnswer: 1,
+            tip: "Проследите выполнение цикла пошагово и определите значения обеих переменных"
         }
     ],
     2: [
@@ -108,18 +184,55 @@ const testData = {
 
 let currentVariant = 1;
 let userAnswers = [];
+let timerInterval;
+let timeLeft = 90 * 60; // 90 минут в секундах
 
 // Обработчики событий
 document.querySelectorAll('.variant-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         currentVariant = parseInt(btn.dataset.variant);
-        loadTest();
+        document.querySelector('.timer-container').classList.remove('hidden');
+        document.querySelector('.test-container').classList.add('hidden');
+        document.querySelector('.results-container').classList.add('hidden');
+        resetTimer();
     });
 });
 
+document.querySelector('.start-test-btn').addEventListener('click', startTest);
 document.querySelector('.submit-btn').addEventListener('click', checkAnswers);
 
 // Функции
+function resetTimer() {
+    timeLeft = 90 * 60;
+    updateTimerDisplay();
+}
+
+function updateTimerDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.querySelector('.timer').textContent = 
+        `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+function startTest() {
+    document.querySelector('.timer-container').classList.add('hidden');
+    document.querySelector('.test-container').classList.remove('hidden');
+    loadTest();
+    startTimer();
+}
+
+function startTimer() {
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+        
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            checkAnswers();
+        }
+    }, 1000);
+}
+
 function loadTest() {
     const questions = testData[currentVariant];
     const questionContainer = document.querySelector('.question-container');
@@ -129,8 +242,20 @@ function loadTest() {
     questions.forEach((question, index) => {
         const questionElement = document.createElement('div');
         questionElement.className = 'question';
+        
+        let imageHTML = '';
+        if (question.image) {
+            imageHTML = `
+                <div class="question-image-container">
+                    <img src="${question.image}" alt="${question.imageCaption}" class="question-image">
+                    <div class="question-image-caption">${question.imageCaption}</div>
+                </div>
+            `;
+        }
+
         questionElement.innerHTML = `
             <p class="question-text">${index + 1}. ${question.question}</p>
+            ${imageHTML}
             <div class="options">
                 ${question.options.map((option, optIndex) => `
                     <label class="option">
@@ -156,6 +281,7 @@ function loadTest() {
 }
 
 function checkAnswers() {
+    clearInterval(timerInterval);
     const questions = testData[currentVariant];
     let score = 0;
     userAnswers = [];
@@ -202,5 +328,5 @@ function showResults(score, total) {
     reviewElement.innerHTML = reviewHTML;
 }
 
-// Загрузка первого варианта при запуске
-loadTest(); 
+// Инициализация таймера
+updateTimerDisplay(); 
